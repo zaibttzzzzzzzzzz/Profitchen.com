@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitChain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://files.catbox.moe/51llml.jpg" alt="ProfitChain Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Levels</a></li>
+                <li><a href="#">Referral</a></li>
+                <li><a href="#">Invest</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="dashboard">
+        <h2>Welcome to ProfitChain, User</h2>
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Current Investment</h3>
+                <p>PKR 500</p>
+            </div>
+            <div class="stat-box">
+                <h3>Your Level</h3>
+                <p>Level 3</p>
+            </div>
+            <div class="stat-box">
+                <h3>Referral Link</h3>
+                <input type="text" value="https://profitchain.com/referral/your-link" readonly>
+                <button onclick="copyLink()">Copy Link</button>
+            </div>
+        </div>
+        <div class="levels">
+            <h3>Level Breakdown</h3>
+            <div class="level">
+                <h4>Level 1</h4>
+                <p>Investment: PKR 500</p>
+                <p>Payout: PKR 50</p>
+            </div>
+            <div class="level">
+                <h4>Level 2</h4>
+                <p>Investment: PKR 1000</p>
+                <p>Payout: PKR 100</p>
+            </div>
+            <div class="level">
+                <h4>Level 3</h4>
+                <p>Investment: PKR 1500</p>
+                <p>Payout: PKR 150</p>
+            </div>
+        </div>
+        <div class="investment">
+            <h3>Invest Now</h3>
+            <button id="investButton">Invest PKR 500</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ProfitChain. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
